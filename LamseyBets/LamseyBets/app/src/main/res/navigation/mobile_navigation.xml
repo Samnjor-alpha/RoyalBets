@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/rmatch">
+
+    <fragment
+        android:id="@+id/rmatch"
+        android:name="dvlp.lamseybets.rmatch"
+        android:label="@string/title_match"
+        tools:layout="@layout/activity_rmatch" />
+
+    <fragment
+        android:id="@+id/rdc"
+        android:name="dvlp.lamseybets.dc"
+        android:label="@string/title_dc"
+        tools:layout="@layout/activity_dc" />
+
+    <fragment
+        android:id="@+id/rht"
+        android:name="dvlp.lamseybets.ht"
+        android:label="@string/title_half"
+        tools:layout="@layout/activity_ht" />
+    <fragment
+        android:id="@+id/rgg"
+        android:name="dvlp.lamseybets.rgg"
+        android:label="GG"
+        tools:layout="@layout/activity_rgg" />
+    <fragment
+        android:id="@+id/rova"
+        android:name="dvlp.lamseybets.rova"
+        android:label="O/U"
+        tools:layout="@layout/activity_rova" />
+</navigation>

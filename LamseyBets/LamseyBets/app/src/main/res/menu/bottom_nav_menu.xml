@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_rmatch"
+        android:icon="@drawable/head"
+        android:title="@string/title_match" />
+
+    <item
+        android:id="@+id/navigation_dc"
+        android:icon="@drawable/dc"
+        android:title="@string/title_dc" />
+
+    <item
+        android:id="@+id/navigation_ht"
+        android:icon="@drawable/ht"
+        android:title="@string/title_half" />
+    <item
+        android:id="@+id/gg"
+        android:icon="@drawable/gg"
+        android:title="GG" />
+    <item
+        android:id="@+id/ou"
+        android:icon="@drawable/ova"
+        android:title="O/U" />
+</menu>
