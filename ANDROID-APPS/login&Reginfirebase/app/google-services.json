@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "593606663432",
+    "firebase_url": "https://logreg-9a711.firebaseio.com",
+    "project_id": "logreg-9a711",
+    "storage_bucket": "logreg-9a711.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:593606663432:android:34b96dca894b09aa7ce0bd",
+        "android_client_info": {
+          "package_name": "com.example.logreg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "593606663432-f1sjsm8usfvi3339fforq6r9gi7pc1ah.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.logreg",
+            "certificate_hash": "015fc2624c00e8734c6c0d62d68dfd2db24960a2"
+          }
+        },
+        {
+          "client_id": "593606663432-67o9ggkaf9ffq0ne6q52vnjpb3dpeb2s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBreo3tGK4dpXKY8broLTip4sIXxR7maKU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "593606663432-67o9ggkaf9ffq0ne6q52vnjpb3dpeb2s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1070915453742",
+    "firebase_url": "https://dutar-2d03a.firebaseio.com",
+    "project_id": "dutar-2d03a",
+    "storage_bucket": "dutar-2d03a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1070915453742:android:aa7488aa38f04c0931b0bf",
+        "android_client_info": {
+          "package_name": "com.dvlp.dutar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1070915453742-tso77hg3analmkum8ma18cma81a18kpc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dvlp.dutar",
+            "certificate_hash": "015fc2624c00e8734c6c0d62d68dfd2db24960a2"
+          }
+        },
+        {
+          "client_id": "1070915453742-3iqkhf2gmss2iipkkuiu5pbj2ludmagr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpKbeJxgOD50Ldf27OuzWR7bfc-znHUfM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1070915453742-3iqkhf2gmss2iipkkuiu5pbj2ludmagr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

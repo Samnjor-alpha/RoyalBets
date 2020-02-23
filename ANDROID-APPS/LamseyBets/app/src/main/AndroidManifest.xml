@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="dvlp.lamseybets">
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MyMaterialTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:theme">
+        <activity android:name=".stats"></activity>
+        <activity android:name=".rmatch" />
+        <activity android:name=".rova" />
+        <activity android:name=".rgg" />
+        <activity android:name=".ht" />
+        <activity android:name=".dc" />
+        <activity
+            android:name=".Recent"
+            android:label="@string/title_activity_recent">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dvlp.lamseybets.MainActivity" />
+        </activity>
+        <activity android:name=".disclaimer">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dvlp.lamseybets.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ContactDevelopers"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/MyMaterialTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dvlp.lamseybets.MainActivity" />
+        </activity>
+        <activity android:name=".Splash_screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainScreen"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/MyMaterialTheme" />
+
+        <meta-data
+            android:name="com.facebook.sdk.AutoInitEnabled"
+            android:value="true" />
+        <meta-data
+            android:name="com.facebook.sdk.AdvertiserIDCollectionEnabled"
+            android:value="true" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8455292583245907~9862880134" />
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.measurement.UPLOAD" />
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

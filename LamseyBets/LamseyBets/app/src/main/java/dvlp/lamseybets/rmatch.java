@@ -134,48 +134,48 @@ public class rmatch extends Fragment {
             }
         });
 
-        mInterstitialAd = new InterstitialAd(Objects.requireNonNull(getContext()));
-        mInterstitialAd.setAdUnitId("ca-app-pub-8455292583245907/7269302547");
-
-
-        mInterstitialAd.setAdListener(new com.google.android.gms.ads.AdListener() {
-            public void onAdLoaded() {
-                showInterstitial();
-            }
-
-
-            private void showInterstitial() {
-                if (mInterstitialAd.isLoaded()) {
-                    mInterstitialAd.show();
-                }
-            }
-
-
-            @Override
-            public void onAdFailedToLoad(int errorCode) {
-                // Toast.makeText(getApplicationContext(), "Ad failed to load! error code: " + errorCode, Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onAdOpened() {
-                // Code to be executed when the ad is displayed.
-            }
-
-            @Override
-            public void onAdClicked() {
-                // Code to be executed when the user clicks on an ad.
-            }
-
-            @Override
-            public void onAdLeftApplication() {
-                //  Toast.makeText(getApplicationContext(), "Ad left application!", Toast.LENGTH_SHORT).show();
-            }//            @Override
-//            public void onAdClosed() {
-//                mInterstitialAd.loadAd(new AdRequest.Builder().build());
+//        mInterstitialAd = new InterstitialAd(Objects.requireNonNull(getContext()));
+//        mInterstitialAd.setAdUnitId("ca-app-pub-8455292583245907/7269302547");
+//
+//
+//        mInterstitialAd.setAdListener(new com.google.android.gms.ads.AdListener() {
+//            public void onAdLoaded() {
+//                showInterstitial();
 //            }
-        });
-
-        mInterstitialAd.loadAd(new AdRequest.Builder().build());
+//
+//
+//            private void showInterstitial() {
+//                if (mInterstitialAd.isLoaded()) {
+//                    mInterstitialAd.show();
+//                }
+//            }
+//
+//
+//            @Override
+//            public void onAdFailedToLoad(int errorCode) {
+//                // Toast.makeText(getApplicationContext(), "Ad failed to load! error code: " + errorCode, Toast.LENGTH_SHORT).show();
+//            }
+//
+//            @Override
+//            public void onAdOpened() {
+//                // Code to be executed when the ad is displayed.
+//            }
+//
+//            @Override
+//            public void onAdClicked() {
+//                // Code to be executed when the user clicks on an ad.
+//            }
+//
+//            @Override
+//            public void onAdLeftApplication() {
+//                //  Toast.makeText(getApplicationContext(), "Ad left application!", Toast.LENGTH_SHORT).show();
+//            }//            @Override
+////            public void onAdClosed() {
+////                mInterstitialAd.loadAd(new AdRequest.Builder().build());
+////            }
+//        });
+//
+//        mInterstitialAd.loadAd(new AdRequest.Builder().build());
         Get3();
 
 

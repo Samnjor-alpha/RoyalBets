@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/Recent"
+        android:title="@string/recent_games"
+        />
+    <item
+        android:id="@+id/dis"
+
+        android:title="@string/disclaimerr"
+    />
+    <item
+android:id="@+id/cont"
+        android:title="@string/contact_developers"
+    />
+<item
+    android:id="@+id/message"
+    android:icon="@drawable/ic_icons8_telegram_app"
+android:title="@string/join_telegram_channel"
+    app:showAsAction="always"
+    >
+</item>
+
+
+</menu>

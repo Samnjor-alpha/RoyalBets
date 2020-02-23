@@ -1,0 +1,226 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+    <TableLayout
+        android:id="@+id/tl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:stretchColumns="0,1,2,3,4">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_margin="1dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="1X2"
+
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_margin="1dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="DC"
+
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_margin="1dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="HT"
+
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_margin="1dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="GG"
+
+            android:textStyle="bold" />
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:layout_margin="1dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="O/U"
+
+        android:textStyle="bold" />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_margin="1dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="soon"
+             />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_margin="1dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="soon"
+             />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_margin="1dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="soon"
+             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_margin="1dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="soon"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_margin="1dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="soon"
+             />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_margin="1dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="soon"
+             />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_margin="1dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="soon"
+             />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_margin="1dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="soon"
+             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_margin="1dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="soon"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_margin="1dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="soon"
+             />
+    </TableRow>
+
+</TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tl"
+        android:gravity="bottom">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/round"
+            android:fontFamily="@font/nunito"
+            android:text="The statistics will be available in the next update!! Thank you"
+            android:textAllCaps="true"
+            android:textColor="#F44336" />
+
+    </LinearLayout>
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-8455292583245907/1517943100"/>
+</RelativeLayout>

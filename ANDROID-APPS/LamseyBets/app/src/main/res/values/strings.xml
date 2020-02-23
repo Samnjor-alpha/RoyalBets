@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Royal Bets</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="slide_1_title">Predictions &amp; Accuracy</string>
+    <string name="slide_1_desc">We provide free football match predictions for all the major popular leagues.More than
+        87% of the matches are correctly predicted
+    </string>
+
+    <string name="slide_2_title">Bet of the day</string>
+    <string name="slide_2_desc">Everyday a team of experts analyzes all the statistics and provides the best matches to
+        bet on.
+    </string>
+    <string name="facebook_app_id">556214221797623</string>
+
+
+    <string name="slide_3_title">Earnings</string>
+    <string name="slide_3_desc">We provide the best match predictions with the best odds for maximum earnings</string>
+
+    <string name="disclaimer">You should not assume that the future performances of any specific investment or
+        investment strategy will be profitable or equal to corresponding past performance levels. Each investment
+        decision you make should be determined with reference to the specific information available for such investment
+        and not based upon the success of past recommendations.
+    </string>
+    <string name="dist">Disclaimer</string>
+    <string name="vs">Vs</string>
+    <string name="devf">DevelopeForME is a Web and Android Development agency, specialized in providing  information, Web And Mobile Solutions. We are a team of developers singularly  bound with the same vision of creating greatness with our IT and Business Skills.</string>
+    <string name="servtitl"> OUR SERVICES</string>
+    <string name="serv">Website Development | Android App Development | S.E.O Analytics | Graphic Design | Technological Solutions</string>
+    <string name="title_activity_recent">Recent Games</string>
+    <string name="title_match">1X2</string>
+    <string name="title_dc">DC</string>
+    <string name="title_half">HT</string>
+
+    <string name="stats">Statistics</string>
+    <string name="feedback">Feedback</string>
+    <string name="join_telegram_channel">Join Telegram channel</string>
+    <string name="contact_developers">Contact Developers</string>
+    <string name="disclaimerr">Disclaimer</string>
+    <string name="recent_games">Recent Games</string>
+</resources>

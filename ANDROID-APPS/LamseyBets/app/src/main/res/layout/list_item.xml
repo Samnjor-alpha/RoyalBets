@@ -1,0 +1,270 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/rel"
+        style="@style/MyCardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:elevation="5dp"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardPreventCornerOverlap="true"
+        card_view:cardUseCompatPadding="true">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:background="@drawable/card_edge" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/league"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="@color/div"
+                    android:gravity="left"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    card_view:fontFamily="@font/nunito"
+                    tools:text="Premier League" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="3dp"
+                    android:paddingLeft="3dp"
+                    android:text=" | "
+                    android:textSize="16sp"
+                    android:gravity="left"
+                    />
+
+                <TextView
+                    android:id="@+id/country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0.5"
+                    android:gravity="left"
+                    android:text="England"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    card_view:fontFamily="@font/nunito" />
+
+                <TextView
+                    android:id="@+id/matchStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Finished"
+                    android:textSize="16sp"
+                    card_view:fontFamily="@font/nunito" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/div"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginRight="20dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/homeTeam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Manchester United"
+                            android:textSize="16sp"
+                            card_view:fontFamily="@font/nunito" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/vs"
+                            android:textColor="#b3de0a"
+                            card_view:fontFamily="@font/nunito"
+                            tools:text="@string/vs" />
+
+                        <TextView
+                            android:id="@+id/awayTeam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textSize="16sp"
+                            card_view:fontFamily="@font/nunito"
+                            tools:text="Real Madrid" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="6dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/hscore"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:background="@drawable/round"
+                                android:paddingStart="20dp"
+                                android:paddingLeft="20dp"
+                                android:paddingEnd="20dp"
+                                android:paddingRight="20dp"
+                                android:text="-"
+                                android:textSize="16sp"
+                                card_view:fontFamily="@font/nunito" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:paddingStart="20dp"
+                                android:paddingLeft="20dp"
+                                android:paddingEnd="20dp"
+                                android:paddingRight="20dp"
+                                android:textSize="16sp"
+                                />
+
+                            <TextView
+                                android:id="@+id/asc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:background="@drawable/round"
+
+                                android:paddingStart="20dp"
+                                android:paddingLeft="20dp"
+                                android:paddingEnd="20dp"
+                                android:paddingRight="20dp"
+                                android:text="-"
+                                android:textSize="16sp"
+                                card_view:fontFamily="@font/nunito" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="6dp"
+                            android:background="@drawable/tipbg"
+                            android:paddingLeft="6dp"
+                            android:paddingRight="6dp"
+                        android:paddingBottom="6dp"
+                            android:text="GoalGoal"
+
+                            android:textColor="#000"
+                            android:textSize="16sp"
+                            card_view:fontFamily="@font/nunito" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/odd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:background="@drawable/round"
+                            android:gravity="center"
+                            android:paddingLeft="6dp"
+                            android:paddingRight="6dp"
+                            android:textSize="16sp"
+                            card_view:fontFamily="@font/nunito"
+                            tools:text="odd" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/tipresult"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:background="@drawable/round"
+                            android:gravity="center"
+                            android:paddingLeft="6dp"
+                            android:layout_marginTop="6dp"
+                            android:paddingRight="6dp"
+                            android:textSize="16sp"
+                            card_view:fontFamily="@font/nunito"
+                            tools:text="Won" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

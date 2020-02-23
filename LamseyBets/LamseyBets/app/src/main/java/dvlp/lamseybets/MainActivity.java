@@ -46,6 +46,9 @@ import com.google.firebase.messaging.FirebaseMessaging;
 import java.util.ArrayList;
 import java.util.List;
 
+import static androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_AUTO_TIME;
+import static androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -56,11 +59,12 @@ public class MainActivity extends AppCompatActivity {
     private FloatingActionButton fab, fab2;
     private int[] tabIcons = {
             R.drawable.head,
+            R.drawable.ova,
             R.drawable.dc,
-            R.drawable.ht,
             R.drawable.gg,
-            R.drawable.ova
+            R.drawable.ht
     };
+    private Configuration configuration;
 
 
     @SuppressLint("WrongConstant")
@@ -68,7 +72,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_AUTO);
+        AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_AUTO_TIME);
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
         AppRater.app_launched(this);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -149,10 +154,10 @@ public class MainActivity extends AppCompatActivity {
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFrag(new matchResult(), "1X2");
-        adapter.addFrag(new DoubleChancee(), "DC");
-        adapter.addFrag(new half(), "HT");
-        adapter.addFrag(new GG(), "GG");
         adapter.addFrag(new over(), "O/U");
+        adapter.addFrag(new DoubleChancee(), "DC");
+        adapter.addFrag(new GG(), "GG");
+        adapter.addFrag(new half(), "HT");
         viewPager.setAdapter(adapter);
     }
 

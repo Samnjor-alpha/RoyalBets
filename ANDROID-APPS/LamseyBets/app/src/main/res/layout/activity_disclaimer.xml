@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    >
+  <com.google.android.material.appbar.AppBarLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+  </com.google.android.material.appbar.AppBarLayout>
+
+  <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="331dp"
+      android:layout_height="100dp"
+      android:tint="#fff"
+      android:layout_marginTop="100dp"
+      android:src="@drawable/ic_warning"/>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/tit"
+      android:layout_marginLeft="15dp"
+      android:layout_marginTop="25dp"
+      android:layout_marginRight="15dp"
+
+      android:text="@string/disclaimer"
+      android:textColor="#fff"
+      app:fontFamily="@font/nunito" />
+
+  <TextView
+      android:id="@+id/tit"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/imageView"
+      android:gravity="center"
+      android:text="@string/dist"
+      android:textAppearance="@style/TextAppearance.AppCompat.Large"
+      android:textColor="#fff"
+      android:textSize="40sp"
+      app:fontFamily="@font/nunito" />
+
+  <LinearLayout
+      android:id="@+id/banner_container"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:orientation="vertical"
+      />
+</RelativeLayout>
