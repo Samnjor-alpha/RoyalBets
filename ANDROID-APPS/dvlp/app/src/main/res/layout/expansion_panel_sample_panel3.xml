@@ -32,11 +32,12 @@
                 android:layout_centerVertical="true"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="120dp"
-                android:id="@+id/categ"
+                android:id="@+id/categ2"
+                android:drawableEnd="@android:drawable/stat_sys_upload"
                 android:clickable="true"
                 android:layout_width="wrap_content"
                 android:text="@string/view_app_on_playstore"
-                android:textColor="#AAA" />
+                android:textColor="@color/colorAccent"  />
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:adjustViewBounds="true"
