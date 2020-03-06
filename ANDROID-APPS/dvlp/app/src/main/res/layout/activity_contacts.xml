@@ -18,9 +18,10 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/imageView2"
 
+            android:layout_marginTop="-5dp"
             android:background="@drawable/linear_bg"
             android:orientation="vertical"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
@@ -33,21 +34,22 @@
                 <CheckedTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
                     android:text="@string/whatsapp"
-                    android:layout_margin="20dp"
                     android:textSize="24sp"
 
                     />
 
                 <Button
+                    android:id="@+id/dmW"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/btn"
                     android:gravity="center_horizontal"
-                    android:padding="5dp"
 
+                    android:padding="5dp"
                     android:text="DM us" />
             </LinearLayout>
 
@@ -58,20 +60,20 @@
                 <CheckedTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
                     android:text="Facebook"
-                    android:layout_margin="20dp"
-                    android:textSize="24sp"
-                    />
+                    android:textSize="24sp" />
 
                 <Button
+                    android:id="@+id/dmF"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/btn"
                     android:gravity="center_horizontal"
-                    android:padding="5dp"
 
+                    android:padding="5dp"
                     android:text="DM us" />
 
             </LinearLayout>
@@ -83,20 +85,20 @@
                 <CheckedTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
                     android:text="Instagram"
-                    android:layout_margin="20dp"
-                    android:textSize="24sp"
-                    />
+                    android:textSize="24sp" />
 
                 <Button
+                    android:id="@+id/dmIg"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/btn"
                     android:gravity="center_horizontal"
-                    android:padding="5dp"
 
+                    android:padding="5dp"
                     android:text="DM us" />
 
             </LinearLayout>
@@ -108,26 +110,25 @@
                 <CheckedTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Email  "
                     android:layout_margin="20dp"
-                    android:textSize="24sp"
-                    />
+                    android:text="Email  "
+                    android:textSize="24sp" />
 
                 <Button
+                    android:id="@+id/dmE"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="50dp"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/btn"
                     android:gravity="center_horizontal"
-                    android:padding="5dp"
 
+                    android:padding="5dp"
                     android:text="DM us" />
 
 
 
             </LinearLayout>
-
         </LinearLayout>
 
 
