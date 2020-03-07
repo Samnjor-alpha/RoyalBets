@@ -34,6 +34,7 @@ import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+import com.google.gson.JsonArray;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -87,7 +88,7 @@ public class matchResult extends Fragment {
 
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(mAdapter);
-
+        //ca-app-pub-3940256099942544/6300978111
 
         MobileAds.initialize(getContext(), new OnInitializationCompleteListener() {
             @Override
@@ -132,48 +133,7 @@ public class matchResult extends Fragment {
                 // to the app after tapping on an ad.
             }
         });
-//        mInterstitialAd = new InterstitialAd(Objects.requireNonNull(getContext()));
-//        mInterstiti      alAd.setAdUnitId("ca-app-pub-8455292583245907/2065268243");
-//
-//
-//        mInterstitialAd.setAdListener(new com.google.android.gms.ads.AdListener() {
-//            public void onAdLoaded() {
-//                showInterstitial();
-//            }
-//
-//
-//            private void showInterstitial() {
-//                if (mInterstitialAd.isLoaded()) {
-//                    mInterstitialAd.show();
-//                }
-//            }
-//
-//
-//            @Override
-//            public void onAdFailedToLoad(int errorCode) {
-//                // Toast.makeText(getApplicationContext(), "Ad failed to load! error code: " + errorCode, Toast.LENGTH_SHORT).show();
-//            }
-//
-//            @Override
-//            public void onAdOpened() {
-//                // Code to be executed when the ad is displayed.
-//            }
-//
-//            @Override
-//            public void onAdClicked() {
-//                // Code to be executed when the user clicks on an ad.
-//            }
-//
-//            @Override
-//            public void onAdLeftApplication() {
-//                //  Toast.makeText(getApplicationContext(), "Ad left application!", Toast.LENGTH_SHORT).show();
-//            }//            @Override
-////            public void onAdClosed() {
-////                mInterstitialAd.loadAd(new AdRequest.Builder().build());
-////            }
-//        });
-//
-//        mInterstitialAd.loadAd(new AdRequest.Builder().build());
+
 
         Get3();
 
@@ -230,6 +190,7 @@ public class matchResult extends Fragment {
                             try {
                                 JSONArray jsonArray = new JSONArray(response);
                                 JSONObject jsonResponse = jsonArray.getJSONObject(0);
+
                                 JSONArray jsonArray_usersS = jsonResponse.getJSONArray("threeWay");
 
                                 for (int i = 0; i < jsonArray_usersS.length(); i++) {
@@ -393,7 +354,7 @@ public class matchResult extends Fragment {
             }
 
 
-            if (games.tipResult.equalsIgnoreCase("Pass")) {
+             if (games.tipResult.equalsIgnoreCase("Pass")) {
 
                 holder.tipRes.setBackgroundResource(R.drawable.won);
                 holder.tipRes.setTextColor(R.color.white);
@@ -411,9 +372,11 @@ public class matchResult extends Fragment {
                 holder.tipRes.setTextColor(R.color.white);
                 holder.tipRes.setText("Pending");
 
-            }
-
-        }
+            }else if(games.tipResult.equalsIgnoreCase("postponed")){
+                holder.tipRes.setBackgroundResource(R.drawable.pending);
+            holder.tipRes.setTextColor(R.color.blue);
+            holder.tipRes.setText("postponed");
+        }}
 
         @Override
         public int getItemCount() {
@@ -441,6 +404,48 @@ public class matchResult extends Fragment {
                 mStatus = view.findViewById(R.id.matchStatus);
                 odds = view.findViewById(R.id.odd);
 
+                mInterstitialAd = new InterstitialAd(Objects.requireNonNull(getContext()));
+                mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
+
+                //ca-app-pub-8455292583245907/2065268243
+                mInterstitialAd.setAdListener(new com.google.android.gms.ads.AdListener() {
+                    public void onAdLoaded() {
+                        showInterstitial();
+                    }
+
+
+                    private void showInterstitial() {
+                        if (mInterstitialAd.isLoaded()) {
+                            mInterstitialAd.show();
+                        }
+                    }
+
+
+                    @Override
+                    public void onAdFailedToLoad(int errorCode) {
+                        // Toast.makeText(getApplicationContext(), "Ad failed to load! error code: " + errorCode, Toast.LENGTH_SHORT).show();
+                    }
+
+                    @Override
+                    public void onAdOpened() {
+                        // Code to be executed when the ad is displayed.
+                    }
+
+                    @Override
+                    public void onAdClicked() {
+                        // Code to be executed when the user clicks on an ad.
+                    }
+
+                    @Override
+                    public void onAdLeftApplication() {
+                        //  Toast.makeText(getApplicationContext(), "Ad left application!", Toast.LENGTH_SHORT).show();
+                    }//            @Override
+//            public void onAdClosed() {
+//                mInterstitialAd.loadAd(new AdRequest.Builder().build());
+//            }
+                });
+
+                mInterstitialAd.loadAd(new AdRequest.Builder().build());
             }
         }
     }

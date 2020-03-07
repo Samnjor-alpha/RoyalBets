@@ -371,9 +371,12 @@ public class dc extends Fragment {
                 holder.tipRes.setTextColor(R.color.white);
                 holder.tipRes.setText("Pending");
 
-            }
+            }else if(games.tipResult.equalsIgnoreCase("postponed")){
+                holder.tipRes.setBackgroundResource(R.drawable.pending);
+            holder.tipRes.setTextColor(R.color.blue);
+            holder.tipRes.setText("postponed");
+        }}
 
-        }
 
         @Override
         public int getItemCount() {

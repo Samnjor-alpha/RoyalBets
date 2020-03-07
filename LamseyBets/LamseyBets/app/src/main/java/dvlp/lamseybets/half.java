@@ -347,7 +347,7 @@ public class half extends Fragment {
             }
 
 
-            if (games.tipResult.equalsIgnoreCase("Pass")) {
+             if (games.tipResult.equalsIgnoreCase("Pass")) {
 
                 holder.tipRes.setBackgroundResource(R.drawable.won);
                 holder.tipRes.setTextColor(R.color.white);
@@ -365,9 +365,11 @@ public class half extends Fragment {
                 holder.tipRes.setTextColor(R.color.white);
                 holder.tipRes.setText("Pending");
 
-            }
-
-        }
+          }else if(games.tipResult.equalsIgnoreCase("postponed")){
+                holder.tipRes.setBackgroundResource(R.drawable.pending);
+            holder.tipRes.setTextColor(R.color.blue);
+            holder.tipRes.setText("postponed");
+        }}
 
         @Override
         public int getItemCount() {
