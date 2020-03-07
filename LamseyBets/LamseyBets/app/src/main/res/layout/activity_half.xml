@@ -44,6 +44,13 @@
         android:layout_marginBottom="32dp"
         android:orientation="vertical">
 
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:adSize="BANNER"
+            app:adUnitId="ca-app-pub-8455292583245907/5537609393"></com.google.android.gms.ads.AdView>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -52,13 +59,6 @@
             android:text="Today's Coupon"
             android:textColor="@color/text"
             android:textSize="16dp" />
-
-        <com.google.android.gms.ads.AdView
-            android:id="@+id/adView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:adSize="BANNER"
-            app:adUnitId="ca-app-pub-8455292583245907/5537609393"></com.google.android.gms.ads.AdView>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view"
