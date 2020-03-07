@@ -405,9 +405,9 @@ public class matchResult extends Fragment {
                 odds = view.findViewById(R.id.odd);
 
                 mInterstitialAd = new InterstitialAd(Objects.requireNonNull(getContext()));
-                mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
+                mInterstitialAd.setAdUnitId("ca-app-pub-8455292583245907/2065268243");
 
-                //ca-app-pub-8455292583245907/2065268243
+                //
                 mInterstitialAd.setAdListener(new com.google.android.gms.ads.AdListener() {
                     public void onAdLoaded() {
                         showInterstitial();
