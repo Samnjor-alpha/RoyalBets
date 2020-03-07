@@ -13,9 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
-import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
@@ -26,12 +24,9 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
-
-
 import com.facebook.shimmer.ShimmerFrameLayout;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
@@ -42,9 +37,6 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
-
-import static java.util.Objects.*;
 
 
 public class GG extends Fragment {
@@ -352,7 +344,7 @@ public class GG extends Fragment {
             }
 
 
-             if (games.tipResult.equalsIgnoreCase("Pass")) {
+            if (games.tipResult.equalsIgnoreCase("Pass")) {
 
                 holder.tipRes.setBackgroundResource(R.drawable.won);
                 holder.tipRes.setTextColor(R.color.white);
@@ -370,11 +362,12 @@ public class GG extends Fragment {
                 holder.tipRes.setTextColor(R.color.white);
                 holder.tipRes.setText("Pending");
 
-          }else if(games.tipResult.equalsIgnoreCase("postponed")){
+            } else if (games.tipResult.equalsIgnoreCase("postponed")) {
                 holder.tipRes.setBackgroundResource(R.drawable.pending);
-            holder.tipRes.setTextColor(R.color.blue);
-            holder.tipRes.setText("postponed");
-        }}
+                holder.tipRes.setTextColor(R.color.blue);
+                holder.tipRes.setText("postponed");
+            }
+        }
 
 
         @Override
